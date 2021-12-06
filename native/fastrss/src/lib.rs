@@ -23,6 +23,7 @@ fn parse<'a>(env: Env<'a>, args: &[Term<'a>]) -> NifResult<Term<'a>> {
         RustlerError::RaiseAtom(string) => string,
         RustlerError::RaiseTerm(_) => "Unknown error getting rss string",
         RustlerError::Atom(string) => string,
+        _ => panic!("Unknown error"),
     });
 
     match input {
