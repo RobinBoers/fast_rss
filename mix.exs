@@ -1,7 +1,7 @@
 defmodule FastRSS.MixProject do
   use Mix.Project
 
-  @source_url "https://github.com/avencera/fast_rss"
+  @source_url "https://github.com/RobinBoers/fast_rss"
   @version "0.3.6"
 
   def project do
